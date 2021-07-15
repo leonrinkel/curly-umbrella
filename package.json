@@ -1,0 +1,28 @@
+{
+  "name": "curly-umbrella",
+  "version": "0.0.1",
+  "main": "dist/src/index.js",
+  "repository": "https://github.com/leonrinkel/curly-umbrella.git",
+  "author": "Leon Rinkel <leon@rinkel.me>",
+  "license": "MIT",
+  "private": false,
+  "bin": "bin/curly-umbrella",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha 'dist/test/**/*.test.js'",
+    "start": "node dist/src/index.js"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^8.2.3",
+    "@types/node": "^16.3.2",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.15.0",
+    "ethers": "^5.4.1",
+    "yaml": "^1.10.2"
+  }
+}
